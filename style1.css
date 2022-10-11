@@ -1,0 +1,241 @@
+/* Body Blurr Property */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo
+{
+    position: absolute;
+    z-index: 2;
+    left: calc((100vw - 300px)/2);
+    top: calc((100vh - 300px)/2);
+    border: 1px solid black;
+    width: 300px;
+    height: 160px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    
+}
+.btn1{
+    position: relative;
+    left: 165px;
+}
+
+.btn2{
+    text-decoration: none;
+    margin-left: 200px;
+    background-color: #00A5EC;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    top: 20px;
+}
+
+.btn2:hover{
+    text-shadow: 2px 2px 25px rgb(241, 244, 244);
+    cursor: pointer;
+}
+#input{
+    border: none;
+    padding: 5px 130px 5px 8px;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+
+.pop-up{
+    background-color: rgba(128, 128, 128, 0.678);
+    filter: blur(10px);
+}
+
+
+
+
+/* Top Section Bar */
+
+.task{
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+}
+.task1{
+    font-size: xx-large;
+    margin-left: 100px;
+}
+.list{
+    font-size: xx-large;
+    color:  #00A5EC;
+}
+
+
+/* Middle Section Bar */
+
+.main{
+    background-color: rgb(248, 238, 238);
+    display: grid;
+    grid-template-rows: 150px 350px 380px;
+    grid-template-columns: repeat(3, 400px);
+    padding: 50px;
+
+}
+
+.icon{
+    text-align: right;
+    margin-right: 100px;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-column: 1/4;
+    margin-top: 50px;    
+}
+
+.icon:hover{
+    text-shadow: 2px 2px 25px aqua;
+    cursor: pointer;
+}
+
+.box{
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 300px;
+    width: 300px;
+    border: 1px solid bisque;
+    background-color: white;
+    font-family: monospace;   
+}
+
+.box:hover{
+    box-shadow: 1px 1px 100px rgba(216, 187, 187, 0.815);
+    cursor: pointer;
+}
+
+.heading{
+    font-size: larger;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#00A5EC ;
+}
+
+.check{
+    color: gray;
+}
+
+/* applying media query */
+
+@media (max-width:500px) {
+
+    .logo
+{
+    position: relative;
+    left: 40px;
+    right: 40px;
+    top: 250px;
+    /* z-index: 2; */
+    /* left: calc((100vw - 300px)/2);
+    top: calc((100vh - 300px)/2); */
+    border: 1px solid black;
+    width: 250px;
+    height: 120px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    
+}
+#input{
+    border: none;
+    padding: 5px 130px 5px 8px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    height: 10px;
+    width: 120px;
+}
+
+body{
+    width: 400px;
+    height: 00px;
+}
+
+.btn1{
+    position: relative;
+    left: 120px;
+}
+
+.btn2{
+    text-decoration: none;
+    /* margin-left: 200px; */
+    background-color: #00A5EC;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: white;
+    height: 25px;
+    width: 120px;
+    position: relative;
+    right: 70px;
+    top: 10px;
+}
+
+.pop-up{
+    background-color: rgba(128, 128, 128, 0.678);
+    filter: blur(10px);
+    height: 800px;
+    width: 400px;
+}
+
+.new1{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 90px;
+    top: 160px;
+    /* right: 600px; */
+    height: 50px;
+    width: 200px;
+}
+
+.new1:hover{
+text-shadow: 2px 2px 25px aqua;
+cursor: pointer;
+}
+
+.main{
+    background-color: rgb(248, 238, 238);
+    display: flex;
+    flex-direction: column;
+    /* width: 210px; */
+    height: 1300px;
+    width: 500px;
+    
+}
+
+.box{
+    box-sizing: border-box;
+    height: 250px;
+    width: 250px;
+    margin: 20px 0px;
+    border: 1px solid bisque;
+    background-color: white;
+    font-family: monospace;
+    position: relative;
+    /* left: 10px; */
+    top: 10px;
+    right: 30px;
+    left: 30px;
+    
+}
+.box:hover{
+    box-shadow: 1px 1px 100px rgba(216, 187, 187, 0.815);
+    cursor: pointer;
+}
+.pop-up{
+    background-color: rgba(128, 128, 128, 0.678);
+    filter: blur(10px);
+}
+   
+}

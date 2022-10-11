@@ -1,0 +1,170 @@
+/* Top Section Bar */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(248, 238, 238);
+}
+
+.task{
+
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 3%;
+    padding-left: 12%;
+    text-shadow: 0.5px -0.5px 20px black;
+    background-color: bisque;
+    font-size: xx-large;
+    
+}
+
+.list{
+    
+    color:  #00A5EC;
+}
+
+
+/* Middle Section Bar */
+
+.main{
+    background-color: rgb(248, 238, 238);
+    /* display: grid;
+    grid-template-rows: 150px 350px 380px;
+    grid-template-columns: repeat(3, 400px);
+    padding: 50px; */
+}
+
+
+/* removing underline from anchor tag */
+
+.new1{
+    text-decoration: none;
+    color: black;
+
+}
+
+.icon{
+    height: 40px;
+    margin: 10px 50px;
+    background-color: rgb(248, 238, 238);
+}
+
+.new-task-btn{
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    padding: 8px;
+    font-style: italic;
+   
+    box-shadow: -1px 1px 12px black;
+    border-radius: 20px;
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 150px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.new-task-btn:hover{
+    /* text-shadow: -1px -1px 22px greenyellow; */
+    /* box-shadow: -1px 1px 12px blueviolet; */
+    background-color: black;
+    padding: 10px 22px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.parent{
+    display: flex;
+    margin: 30px 90px;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    overflow-wrap: initial;
+}
+
+.box{
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    height: 240px;
+    width: 240px;
+    margin: 30px 50px;
+    border: 0.5px solid black;
+    border-radius: 14px;
+    background-color: white;
+    font-family: monospace;
+    /* text-align: center; */
+    
+}
+
+.Trip{
+    text-decoration: none;
+    color:#00A5EC ;
+}
+
+.box:hover{
+    box-shadow: -10px 10px 30px black;
+    /* transition: 1s all linear; */
+    height: 260px;
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.heading{
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#00A5EC ;
+}
+input{
+    margin: 5px 25px ;
+}
+
+.check{
+    color: gray;
+}
+
+/* Applying Media Query */
+
+@media screen and  (max-width: 700px)  {
+
+    .task{
+        margin: 10px 0px;
+    }
+    
+    .new-task-btn{
+        padding: 3px;
+        font-style: italic;
+        position: absolute;
+        left: 10%;
+        top: 18.5%;
+        box-shadow: -1px 1px 12px black;
+        border-radius: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .main{
+        padding: 0px;
+    }
+  
+    
+    .parent{
+        flex-direction: column;
+    }
+
+    .box{
+        position: relative;
+        right: 120px;
+        height: 200px;
+        width: 200px;
+    }
+    
+}
